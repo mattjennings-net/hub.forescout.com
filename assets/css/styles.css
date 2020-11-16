@@ -1,4 +1,11 @@
 /* General styles */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   color: #000;
   font-family: 'proxima-nova', sans-serif;
@@ -32,4 +39,13 @@ strong {
 
 .dark-blue {
   color: #002f70;
+}
+
+
+/* Banner ---> <banner></banner> */
+
+/* Main ---> <main></main> */
+#main {
+  max-width: 1440px;
+  margin: 0 auto;
 }
