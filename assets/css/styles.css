@@ -64,6 +64,7 @@ strong {
   background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: right;
+  margin: 0 auto;
 }
 
 #banner-inner {
