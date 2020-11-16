@@ -1,0 +1,5 @@
+# Ignore artwork directory (like .ai files)
+artwork/
+
+# Ignore Mac computer files
+.DS_Store
