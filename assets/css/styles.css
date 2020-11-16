@@ -1,0 +1,89 @@
+/* General styles */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: #000;
+  font-family: 'proxima-nova', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 1.3em;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.3em;
+  margin: 0 0 0.75em;
+  font-weight: 300;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.light-blue {
+  color: #009ce9;
+}
+
+.dark-blue {
+  color: #002f70;
+}
+
+/* Grid (divided by 12) */
+.col-5 {
+  width: calc(100% / 12 * 5);
+}
+
+.col-7 {
+  width: calc(100% / 12 * 7);
+}
+
+
+/* Wrapper */
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+/* Banner ---> <banner></banner> */
+#banner {
+  background-color: #fdc010;
+  height: 180px;
+  background-image: url(../images/banner-artwork.png);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  margin: 0 auto;
+}
+
+#banner-inner {
+  max-width: 1440px;
+  height: 100%;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Main ---> <main></main> */
