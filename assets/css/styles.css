@@ -19,10 +19,18 @@ body {
 }
 
 h1 {
-  font-size: 72px;
+  font-size: 45px;
   font-weight: 300;
   line-height: 1.3em;
-  margin: 0.25em 0;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.3em;
+  margin: 0 0 0.75em;
+  font-weight: 300;
 }
 
 p {
@@ -41,11 +49,30 @@ strong {
   color: #002f70;
 }
 
-
-/* Banner ---> <banner></banner> */
-
-/* Main ---> <main></main> */
-#main {
+/* Wrapper */
+.wrapper {
   max-width: 1440px;
   margin: 0 auto;
+  padding: 0 30px;
 }
+
+/* Banner ---> <banner></banner> */
+#banner {
+  background-color: #fdc010;
+  height: 180px;
+  background-image: url(../images/banner-artwork.png);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#banner-inner {
+  max-width: 1440px;
+  height: 100%;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Main ---> <main></main> */
