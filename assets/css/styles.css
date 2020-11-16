@@ -49,6 +49,16 @@ strong {
   color: #002f70;
 }
 
+/* Grid (divided by 12) */
+.col-5 {
+  width: calc(100% / 12 * 5);
+}
+
+.col-7 {
+  width: calc(100% / 12 * 7);
+}
+
+
 /* Wrapper */
 .wrapper {
   max-width: 1440px;
