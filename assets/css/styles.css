@@ -158,6 +158,41 @@ a.button:focus  {
   width: 100%;
 }
 
+/* Nav */
+#nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#nav li {
+  display: inline;
+  font-size: 16px;
+  padding: 30px 0;
+}
+
+#nav a {
+  text-decoration: none;
+  color: #000;
+  padding: 0 15px;
+}
+
+#nav a:hover, 
+#nav a:active,
+#nav a:focus {
+  text-decoration: underline;
+}
+
+#nav .nav-spacer {
+  font-size: 22px;
+  font-weight: 200;
+  margin-top: -4px;
+}
+
 /* 900px wide or less media query */
 @media (max-width: 900px) {
   /* General styles */
@@ -176,6 +211,20 @@ a.button:focus  {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
     position: static;
+  }
+
+  /* Nav */
+  #nav ul {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+
+  #nav li {
+    padding: 15px 0;
+  }
+
+  #nav .nav-spacer {
+    transform: rotate(90deg);
   }
 
 }
