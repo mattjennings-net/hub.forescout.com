@@ -147,6 +147,7 @@ a.button:focus  {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 400px;
 }
 
 #featured-image {
@@ -155,4 +156,26 @@ a.button:focus  {
   background-position: center;
   height: 400px !important;
   width: 100%;
+}
+
+/* 900px wide or less media query */
+@media (max-width: 900px) {
+  /* General styles */
+  .flex-direction-column-900px {
+    flex-direction: column;
+  }
+
+  /* Feature of the Week */
+  #featured-text {
+    height: auto;
+    padding: 20px 0;
+    width: 100%; 
+  }
+
+  #featured-image-wrapper {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    position: static;
+  }
+
 }
