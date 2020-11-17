@@ -213,4 +213,18 @@ a.button:focus  {
     position: static;
   }
 
+  /* Nav */
+  #nav ul {
+    flex-direction: column;
+    padding: 15px 0;
+  }
+
+  #nav li {
+    padding: 15px 0;
+  }
+
+  #nav .nav-spacer {
+    transform: rotate(90deg);
+  }
+
 }
