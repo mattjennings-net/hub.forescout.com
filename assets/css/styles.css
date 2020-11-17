@@ -166,8 +166,15 @@ a.button:focus  {
 }
 
 #nav li {
-  
+  display: inline;
 }
+
+#nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+
 
 /* 900px wide or less media query */
 @media (max-width: 900px) {
