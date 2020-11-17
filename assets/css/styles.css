@@ -16,6 +16,7 @@ body {
   text-rendering: geometricPrecision;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -33,12 +34,37 @@ h2 {
   font-weight: 300;
 }
 
+.h2-blue-uppercase {
+  color: #009ce9;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.h3-sub-title {
+  line-height: 1.3em;
+  margin-bottom: 0;
+}
+
 p {
   margin-bottom: 1em;
 }
 
 strong {
   font-weight: 700;
+}
+
+.button {
+  background-color: #002f70;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+a.button:hover, 
+a.button:active, 
+a.button:focus  {
+  text-decoration: underline;
 }
 
 .light-blue {
@@ -49,15 +75,44 @@ strong {
   color: #002f70;
 }
 
+.float-right {
+  float: right;
+}
+
+.no-float {
+  float: none;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.postion-absolute {
+  position: absolute;
+}
+
+.right-0 {
+  right: 0;
+}
+
+.height-400px {
+  height: 400px;
+}
+
 /* Grid (divided by 12) */
-.col-5 {
-  width: calc(100% / 12 * 5);
+.pad-col-1 {
+  padding-right: calc(100% / 12);
+}
+
+.col-4 {
+  width: 33.33%;
+  float: left;
 }
 
 .col-7 {
-  width: calc(100% / 12 * 7);
+  width: 58.33%;
+  float: left;
 }
-
 
 /* Wrapper */
 .wrapper {
@@ -84,6 +139,43 @@ strong {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 0 auto;
 }
 
-/* Main ---> <main></main> */
+/* Feature of the Week */
+#featured-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+}
+
+#featured-image {
+  background-image: url(../images/woman-and-man-working-in-office.png);
+  background-size: cover;
+  background-position: center;
+  height: 400px !important;
+  width: 100%;
+}
+
+/* 900px wide or less media query */
+@media (max-width: 900px) {
+  /* General styles */
+  .flex-direction-column-900px {
+    flex-direction: column;
+  }
+
+  /* Feature of the Week */
+  #featured-text {
+    height: auto;
+    padding: 20px 0;
+    width: 100%; 
+  }
+
+  #featured-image-wrapper {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    position: static;
+  }
+
+}
