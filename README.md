@@ -17,7 +17,7 @@
 
 6. For the "All | Insights | News..." section add then in a <nav></nav> tag even if there are no links.
 
-7. For the "Insights, News..." sections that show the images with the transparent <div></div> tag colors above them, use z-index without absolute positioning (https://stackoverflow.com/questions/9674988/z-index-without-absolute-position).  
+7. For the "Insights, News..." sections that show the images with the transparent <div></div> tag colors above them, use z-index without absolute positioning (https://stackoverflow.com/questions/9674988/z-index-without-absolute-position).
 
 Also, have the grayscale images be background images with a background-size: cover property.
 
