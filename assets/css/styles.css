@@ -158,6 +158,17 @@ a.button:focus  {
   width: 100%;
 }
 
+/* Nav */
+#nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+#nav li {
+  
+}
+
 /* 900px wide or less media query */
 @media (max-width: 900px) {
   /* General styles */
