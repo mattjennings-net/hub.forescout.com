@@ -243,11 +243,16 @@ main {
 .article-bg-img {
   grid-column: 2/3;
   grid-row: 1/2;
+  background-size: cover;
 }
 
 /* Background images for .article-bg-img elements */
 .insights-bg-img {
   background-image: url(../images/man-working-with-servers.png);
+}
+
+.news-bg-img {
+  background-image: url(../images/person-touching-touchscreen-device.png);
 }
 
 .article-sub-text {
@@ -268,6 +273,10 @@ main {
 /* Background colors for specific .article-sub-text elements */
 .insights-sub-text {
   background-color: rgba(147, 200, 62, 0.5);
+}
+
+.news-sub-text {
+  background-color: rgba(247, 140, 30, 0.5);
 }
 
 /* 900px wide or less media query */
