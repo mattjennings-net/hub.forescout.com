@@ -259,6 +259,10 @@ main {
   background-image: url(../images/woman-and-man-observing-servers.png);
 }
 
+.industries-bg-img {
+  background-image: url(../images/room-with-servers.png);
+}
+
 .article-sub-text {
   grid-column: 1/3;
   grid-row: 1/2;
