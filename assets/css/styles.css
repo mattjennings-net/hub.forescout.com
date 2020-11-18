@@ -244,6 +244,7 @@ main {
   grid-column: 2/3;
   grid-row: 1/2;
   background-size: cover;
+  background-position: center;
 }
 
 /* Background images for .article-bg-img elements */
@@ -302,6 +303,10 @@ main {
     flex-direction: column;
   }
 
+  .col-6 {
+    width: 100%;
+  }
+
   /* Feature of the Week */
   #featured-text {
     height: auto;
@@ -327,6 +332,11 @@ main {
 
   #nav .nav-spacer {
     transform: rotate(90deg);
+  }
+
+  /* Section Descriptions */
+  #section-descriptions {
+    grid-template-columns: repeat(1, 1fr);
   }
 
 }
